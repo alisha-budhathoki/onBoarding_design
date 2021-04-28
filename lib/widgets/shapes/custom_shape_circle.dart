@@ -18,8 +18,7 @@ class CustomCircle extends CustomPainter {
     var paint = Paint()
       ..color = color
       ..strokeWidth = 15;
-    Offset center = Offset(widthVal == null ? size.width / 2 : widthVal,
-        heightVal == null ? size.height / 2 : heightVal);
+    Offset center = Offset(widthVal, heightVal);
     canvas.drawCircle(center, radius, paint);
   }
 
