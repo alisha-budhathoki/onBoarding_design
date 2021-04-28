@@ -12,9 +12,13 @@ class OnBoardingScreen1 extends StatelessWidget {
         body: Stack(
       children: [
         OnBoardingBkgrnd1(),
-        Text(
-          'Optimized learning with \npersonalized content',
-          style: TextStyle(fontSize: 24.0, height: 1.4, color: Colors.black),
+        Positioned(
+          top: 218.0,
+          left: 35.0,
+          child: Text(
+            'Educational platform \nre-imagined, with AI Features',
+            style: TextStyle(fontSize: 24.0, height: 1.4, color: Colors.black),
+          ),
         ),
       ],
     ));

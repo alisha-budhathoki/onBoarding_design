@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'onboarding_curve1.dart';
+import 'shapes/onboarding_curve1.dart';
 
 class OnBoardingBkgrnd1 extends StatelessWidget {
   const OnBoardingBkgrnd1({Key key}) : super(key: key);
