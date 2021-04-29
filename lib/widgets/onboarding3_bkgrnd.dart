@@ -7,32 +7,52 @@ class OnboardingBkgrnd3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
+    final double height = MediaQuery.of(context).size.height;
+
     return Stack(
       children: [
         CustomPaint(
           child: Container(),
           painter: CustomCircle(
-              radius: 280.5,
-              color: Color(0xFFff8f8e).withOpacity(0.3),
-              widthVal: 184.5,
-              heightVal: 164),
+            screenWidth: width * 0.5,
+            screenHeight: height * 0.25,
+            radius: width * 0.5,
+            color: Color(0xFFff8f8e).withOpacity(0.6),
+          ),
         ),
         CustomPaint(
           child: Container(),
           painter: CustomCircle(
-              radius: 192.5,
-              color: Color(0xFFff8f8e).withOpacity(0.6),
-              widthVal: 187.5,
-              heightVal: 167.0),
+            screenWidth: width * 0.5,
+            screenHeight: height * 0.25,
+            radius: width * 0.75,
+            color: Color(0xFFff8f8e).withOpacity(0.3),
+          ),
         ),
         CustomPaint(
           child: Container(),
           painter: CustomCircle(
-              radius: 110.5,
-              color: Color(0xFFff8f8e).withOpacity(1),
-              widthVal: 187.5,
-              heightVal: 167.5),
+            screenWidth: width * 0.5,
+            screenHeight: height * 0.25,
+            radius: width * 0.29,
+            color: Color(0xFFff8f8e).withOpacity(1),
+          ),
         ),
+        // CustomPaint(
+        //   child: Container(),
+        //   painter: CustomCircle(
+        //     radius: 192.5,
+        //     color: Color(0xFFff8f8e).withOpacity(0.6),
+        //   ),
+        // ),
+        // CustomPaint(
+        //   child: Container(),
+        //   painter: CustomCircle(
+        //     radius: 110.5,
+        //     color: Color(0xFFff8f8e).withOpacity(1),
+        //   ),
+        // ),
       ],
     );
   }

@@ -5,10 +5,12 @@ import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
 
 void main() {
-  runApp(DevicePreview(
-    enabled: !kReleaseMode,
-    builder: (context) => MyApp(), // Wrap your app
-  ));
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -16,6 +18,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,

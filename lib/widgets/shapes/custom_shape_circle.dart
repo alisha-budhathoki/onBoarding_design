@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class CustomCircle extends CustomPainter {
-  final double widthVal;
-  final double heightVal;
-  final double radius;
   final Color color;
+  final double screenWidth;
+  final double screenHeight;
+  final double radius;
 
   const CustomCircle({
-    this.widthVal,
-    this.heightVal,
-    this.radius = 150.0,
     this.color = Colors.black87,
+    this.screenWidth,
+    this.screenHeight,
+    this.radius,
   });
 
   @override
@@ -18,7 +18,7 @@ class CustomCircle extends CustomPainter {
     var paint = Paint()
       ..color = color
       ..strokeWidth = 15;
-    Offset center = Offset(widthVal, heightVal);
+    Offset center = Offset(screenWidth, screenHeight);
     canvas.drawCircle(center, radius, paint);
   }
 

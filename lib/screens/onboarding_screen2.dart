@@ -9,7 +9,7 @@ class OnBoardingScreen2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color(0xFF74B9FF),
-        body: Column(
+        body: Stack(
           children: [
             OnBoardingbkgrnd2(),
             SizedBox(height: kToolbarHeight + 32.0),

@@ -7,23 +7,41 @@ class OnBoarding4Bkgrnd extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Stack(
       children: [
-        CustomPaint(
-          // size: Size(250, 150),
-          painter: RoundedRectanglePainter(-35, -17, 176, 368),
+        Positioned(
+          top: -height * 0.23,
+          left: -width * 0.13,
+          child: CustomPaint(
+            // size: Size(300, 300),
+            painter: RoundedRectanglePainter(width, height),
+          ),
         ),
-        CustomPaint(
-          // size: Size(250, 150),
-          painter: RoundedRectanglePainter(194.0, -50, 450, 436),
+        Positioned(
+          top: height * 0.6,
+          left: width * 0.53,
+          child: CustomPaint(
+            // size: Size(300, 300),
+            painter: RoundedRectanglePainter(width, height),
+          ),
         ),
-        CustomPaint(
-          // size: Size(250, 150),
-          painter: RoundedRectanglePainter(-90.0, 384, 166, 870),
+        Positioned(
+          top: height * 0.5,
+          left: -width * 0.13,
+          child: CustomPaint(
+            // size: Size(300, 300),
+            painter: RoundedRectanglePainter(width, height),
+          ),
         ),
-        CustomPaint(
-          // size: Size(250, 150),
-          painter: RoundedRectanglePainter(194.0, 460.0, 405.0, 845.0),
+        Positioned(
+          top: -height * 0.13,
+          left: width * 0.53,
+          child: CustomPaint(
+            // size: Size(300, 300),
+            painter: RoundedRectanglePainter(width, height),
+          ),
         ),
       ],
     );

@@ -7,31 +7,41 @@ class OnBoardingbkgrnd2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+
     return Stack(
       children: [
-        CustomPaint(
-          child: Container(),
-          painter: CustomCircle(
-              radius: 241,
+        Positioned(
+          child: CustomPaint(
+            child: Container(),
+            painter: CustomCircle(
+              radius: 0.65 * width,
               color: Color(0xFF82c0ff),
-              widthVal: 128,
-              heightVal: 347),
+              screenWidth: width * 0.30,
+              screenHeight: height * 0.56,
+            ),
+          ),
+        ),
+        Positioned(
+          child: CustomPaint(
+            child: Container(),
+            painter: CustomCircle(
+              radius: 0.12 * width,
+              color: Color(0xFF8dc6ff),
+              screenWidth: width * 0.13,
+              screenHeight: height * 0.55,
+            ),
+          ),
         ),
         CustomPaint(
           child: Container(),
           painter: CustomCircle(
-              radius: 52.0,
-              color: Color(0xFF8dc6ff),
-              widthVal: 55.0,
-              heightVal: 365.0),
-        ),
-        CustomPaint(
-          child: Container(),
-          painter: CustomCircle(
-              radius: 77,
-              color: Color(0xFF8dc6ff),
-              widthVal: 269,
-              heightVal: 431),
+            radius: 0.18 * width,
+            color: Color(0xFF8dc6ff),
+            screenWidth: width * 0.661,
+            screenHeight: height * 0.7,
+          ),
         ),
       ],
     );

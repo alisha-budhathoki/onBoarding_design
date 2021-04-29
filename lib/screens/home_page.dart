@@ -12,8 +12,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          // alignment: Alignment.bottomCenter,
-          child: OnBoardingScreen4()),
+        child: OnBoardingScreen3(),
+      ),
     );
   }
 }

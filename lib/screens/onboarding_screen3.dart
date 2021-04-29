@@ -7,8 +7,8 @@ class OnBoardingScreen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFff7775),
-        body: Column(
+        backgroundColor: Color(0xFFFF7775),
+        body: Stack(
           children: [
             OnboardingBkgrnd3(),
             SizedBox(height: kToolbarHeight + 32.0),

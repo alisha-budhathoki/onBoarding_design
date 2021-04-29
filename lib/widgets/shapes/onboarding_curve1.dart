@@ -7,18 +7,33 @@ class OnBoardingCurve1 extends CustomPainter {
     Path path = Path();
     Paint paint = Paint();
     path.lineTo(0, size.height * 0.6267);
+    print("height: " +
+        size.height.toString() +
+        ' width: ' +
+        size.width.toString());
+
     path.quadraticBezierTo(
       size.width * 0.20,
       size.height * 0.575,
       size.width * 0.6,
       size.height * 0.7367,
     );
+    print("height: " +
+        size.height.toString() +
+        ' width: ' +
+        size.width.toString());
+
     path.quadraticBezierTo(
       size.width * 0.75,
       size.height * 0.8584,
       size.width * 1.0,
       size.height * 0.8567,
     );
+    print("height: " +
+        size.height.toString() +
+        ' width: ' +
+        size.width.toString());
+
     path.lineTo(size.width, size.height);
     path.lineTo(0, size.height);
     path.close();
